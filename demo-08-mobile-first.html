@@ -13,6 +13,59 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        body {
+            background: #f3f4f6;
+        }
+
+        .container {
+            display: grid;
+            gap: 12px;
+            padding: 10px;
+            min-height: 100vh;
+
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "sidebar"
+                "ads"
+                "footer";
+        }
+
+        .container>div {
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            background: #0891b2;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+            min-height: 200px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .ads {
+            grid-area: ads;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
     </style>
 </head>
 
